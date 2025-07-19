@@ -16,7 +16,7 @@ spec:
       tty: true
       volumeMounts:
         - name: docker-config
-          mountPath: /root/.docker/
+          mountPath: "/kaniko/.docker"
           readOnly: true
   volumes:
     - name: docker-config
