@@ -23,7 +23,7 @@ pipeline {
     stage('Build Docker Image') {
       steps {
         script {
-          docker.build("yourdockerhub/${env.JOB_NAME}:${env.BUILD_NUMBER}")
+          docker.build("anunukemsam/${env.JOB_NAME}:${env.BUILD_NUMBER}")
         }
       }
     }
